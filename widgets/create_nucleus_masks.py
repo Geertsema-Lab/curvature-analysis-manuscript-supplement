@@ -125,7 +125,7 @@ if __name__ == "__main__":
             images[i], global_min=None, global_max=None, dtype=np.float32
         )
         images[i], spacing_goal = isotropize(images[i], spacings[i], wavelengths[i])
-        # TODO: NOTE that the intensity per voxel can now be higher than 1
+        # NOTE: that the intensity per voxel can now be higher than 1
         # images[i] = preprocessing.normalize(
         #     images[i], global_min=None, global_max=None, dtype=np.float32
         # )
